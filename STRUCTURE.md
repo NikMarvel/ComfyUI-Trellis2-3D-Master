@@ -4,6 +4,11 @@
 
 ```text
 3D/
+├── custom_nodes/                          # Пользовательские ноды Garage Kit для ComfyUI
+│   ├── garage_kit_eyes.py                 # Процедурная замена поврежденных век/глаз
+│   ├── garage_kit_quality.py              # Анализатор метрик качества и полигональной сетки
+│   ├── garage_kit_splitter_node.py        # Модульная нарезка фигурки на слои
+│   └── garage_kit_topology.py             # Квадратная авторетопология (QuadriFlow / Blender) и риггинг
 ├── .launcher/                             # Скрипты и конфигурации запуска среды
 ├── Antigravity_Edit_8K_Ultimate.json       # Ультимативный 4-ракурсный пайплайн (Front, Left, Back, Right) без нарезки
 ├── Antigravity_SingleImage_MoGe_3D.json    # Пайплайн генерации из 1 картинки с нейросетью глубины MoGe 2

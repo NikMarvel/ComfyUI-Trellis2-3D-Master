@@ -1,8 +1,8 @@
 {
   "id": "aa77013b-18f1-4679-9678-6d455d3536c5",
   "revision": 0,
-  "last_node_id": 463,
-  "last_link_id": 1554,
+  "last_node_id": 469,
+  "last_link_id": 1575,
   "nodes": [
     {
       "id": 91,
@@ -540,7 +540,7 @@
           "widget": {
             "name": "steps"
           },
-          "link": null
+          "link": 1574
         },
         {
           "localized_name": "cfg",
@@ -771,57 +771,6 @@
       }
     },
     {
-      "id": 288,
-      "type": "PrimitiveInt",
-      "pos": [
-        6960,
-        360
-      ],
-      "size": [
-        240,
-        90
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "значение",
-          "name": "value",
-          "type": "INT",
-          "widget": {
-            "name": "value"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "ЦЕЛОЕ",
-          "name": "INT",
-          "type": "INT",
-          "links": [
-            1185,
-            1186
-          ]
-        }
-      ],
-      "title": "Разрешение 4K UV-атласа (4096)",
-      "properties": {
-        "Node name for S&R": "PrimitiveInt",
-        "cnr_id": "comfy-core",
-        "ver": "0.33.0"
-      },
-      "widgets_values": [
-        4096,
-        "fixed"
-      ],
-      "widgets_values_named": {
-        "value": 4096,
-        "control_after_generate": "fixed"
-      }
-    },
-    {
       "id": 238,
       "type": "MeshSmoothNormals",
       "pos": [
@@ -930,7 +879,7 @@
           "widget": {
             "name": "steps"
           },
-          "link": null
+          "link": 1572
         },
         {
           "localized_name": "cfg",
@@ -1654,7 +1603,7 @@
           "widget": {
             "name": "steps"
           },
-          "link": null
+          "link": 1571
         },
         {
           "localized_name": "cfg",
@@ -1982,7 +1931,7 @@
           "widget": {
             "name": "target_resolution"
           },
-          "link": null
+          "link": 1562
         }
       ],
       "outputs": [
@@ -2060,7 +2009,7 @@
           "widget": {
             "name": "resolution"
           },
-          "link": null
+          "link": 1565
         },
         {
           "localized_name": "samples",
@@ -2069,7 +2018,7 @@
           "widget": {
             "name": "samples"
           },
-          "link": null
+          "link": 1566
         },
         {
           "localized_name": "max_distance",
@@ -2164,7 +2113,7 @@
           "widget": {
             "name": "resolution"
           },
-          "link": null
+          "link": 1563
         },
         {
           "localized_name": "cage_distance",
@@ -2318,7 +2267,7 @@
           "widget": {
             "name": "resolution"
           },
-          "link": null
+          "link": 1560
         },
         {
           "localized_name": "sign_mode",
@@ -2472,7 +2421,7 @@
           "widget": {
             "name": "target_face_count"
           },
-          "link": null
+          "link": 1561
         },
         {
           "localized_name": "placement_mode",
@@ -2864,9 +2813,7 @@
           "localized_name": "3D-модель",
           "name": "model_3d",
           "type": "FILE_3D_GLB",
-          "links": [
-            1296
-          ]
+          "links": []
         }
       ],
       "properties": {
@@ -2912,7 +2859,6 @@
           "name": "mesh",
           "type": "MESH",
           "links": [
-            1176,
             1482
           ]
         }
@@ -2958,7 +2904,8 @@
           "name": "model_3d",
           "type": "FILE_3D_GLB",
           "links": [
-            1442
+            1442,
+            1296
           ]
         }
       ],
@@ -3070,7 +3017,7 @@
           "widget": {
             "name": "steps"
           },
-          "link": null
+          "link": 1573
         },
         {
           "localized_name": "cfg",
@@ -5309,7 +5256,7 @@
           "widget": {
             "name": "resolution"
           },
-          "link": null
+          "link": 1564
         },
         {
           "name": "blend_exponent",
@@ -5593,7 +5540,7 @@
         {
           "name": "mesh",
           "type": "MESH",
-          "link": 1482
+          "link": 1559
         }
       ],
       "outputs": [],
@@ -6805,7 +6752,7 @@
           "widget": {
             "name": "largest_size"
           },
-          "link": null
+          "link": 1567
         }
       ],
       "outputs": [
@@ -6864,7 +6811,7 @@
           "widget": {
             "name": "largest_size"
           },
-          "link": null
+          "link": 1568
         }
       ],
       "outputs": [
@@ -6923,7 +6870,7 @@
           "widget": {
             "name": "largest_size"
           },
-          "link": null
+          "link": 1569
         }
       ],
       "outputs": [
@@ -6982,7 +6929,7 @@
           "widget": {
             "name": "largest_size"
           },
-          "link": null
+          "link": 1570
         }
       ],
       "outputs": [
@@ -7006,6 +6953,362 @@
         "largest_size": 2048
       },
       "title": "Right · 2048 в проекцию"
+    },
+    {
+      "id": 464,
+      "type": "GarageKitTopology",
+      "pos": [
+        6020,
+        2200
+      ],
+      "size": [
+        360,
+        300
+      ],
+      "flags": {},
+      "order": 90,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "mesh",
+          "name": "mesh",
+          "type": "MESH",
+          "link": 1555
+        },
+        {
+          "name": "target_quads",
+          "type": "INT",
+          "widget": {
+            "name": "target_quads"
+          },
+          "link": 1575
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "links": null
+        },
+        {
+          "name": "uv_preview",
+          "type": "IMAGE",
+          "links": [
+            1556
+          ]
+        },
+        {
+          "name": "rig_preview",
+          "type": "IMAGE",
+          "links": [
+            1557
+          ]
+        },
+        {
+          "name": "wire_preview",
+          "type": "IMAGE",
+          "links": [
+            1558
+          ]
+        }
+      ],
+      "title": "Топология · квады, UV, риг, STL",
+      "properties": {
+        "Node name for S&R": "GarageKitTopology"
+      },
+      "widgets_values": [
+        "quads",
+        18000,
+        768,
+        "3d/2B_Anim"
+      ]
+    },
+    {
+      "id": 465,
+      "type": "PreviewImage",
+      "pos": [
+        6420,
+        2200
+      ],
+      "size": [
+        340,
+        360
+      ],
+      "flags": {},
+      "order": 545,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "изображения",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1556
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "изображения",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "UV сетка на меше",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 466,
+      "type": "PreviewImage",
+      "pos": [
+        6420,
+        2580
+      ],
+      "size": [
+        340,
+        360
+      ],
+      "flags": {},
+      "order": 546,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "изображения",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1557
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "изображения",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Риг на меше",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 467,
+      "type": "PreviewImage",
+      "pos": [
+        6420,
+        2960
+      ],
+      "size": [
+        340,
+        360
+      ],
+      "flags": {},
+      "order": 547,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "изображения",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1558
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "изображения",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "Полигональная сетка",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 468,
+      "type": "GarageKitEyes",
+      "pos": [
+        6640,
+        1900
+      ],
+      "size": [
+        300,
+        100
+      ],
+      "flags": {},
+      "order": 88,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "link": 1482
+        }
+      ],
+      "outputs": [
+        {
+          "name": "mesh",
+          "type": "MESH",
+          "links": [
+            1559,
+            1555,
+            1176
+          ]
+        }
+      ],
+      "title": "Глаза · как на референсе, без ресниц",
+      "properties": {
+        "Node name for S&R": "GarageKitEyes"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 469,
+      "type": "GarageKitQuality",
+      "pos": [
+        40,
+        1720
+      ],
+      "size": [
+        420,
+        560
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "structure_steps",
+          "type": "INT",
+          "links": [
+            1571
+          ]
+        },
+        {
+          "name": "shape_steps",
+          "type": "INT",
+          "links": [
+            1572
+          ]
+        },
+        {
+          "name": "detail_steps",
+          "type": "INT",
+          "links": [
+            1573
+          ]
+        },
+        {
+          "name": "texture_steps",
+          "type": "INT",
+          "links": [
+            1574
+          ]
+        },
+        {
+          "name": "upsample",
+          "type": "INT",
+          "links": [
+            1562
+          ]
+        },
+        {
+          "name": "remesh",
+          "type": "INT",
+          "links": [
+            1560
+          ]
+        },
+        {
+          "name": "faces",
+          "type": "INT",
+          "links": [
+            1561
+          ]
+        },
+        {
+          "name": "atlas",
+          "type": "INT",
+          "links": [
+            1185,
+            1186
+          ]
+        },
+        {
+          "name": "normal_res",
+          "type": "INT",
+          "links": [
+            1563
+          ]
+        },
+        {
+          "name": "project_res",
+          "type": "INT",
+          "links": [
+            1564
+          ]
+        },
+        {
+          "name": "ao_res",
+          "type": "INT",
+          "links": [
+            1565
+          ]
+        },
+        {
+          "name": "ao_samples",
+          "type": "INT",
+          "links": [
+            1566
+          ]
+        },
+        {
+          "name": "view_res",
+          "type": "INT",
+          "links": [
+            1567,
+            1568,
+            1569,
+            1570
+          ]
+        },
+        {
+          "name": "quads",
+          "type": "INT",
+          "links": [
+            1575
+          ]
+        }
+      ],
+      "title": "Качество · авто или вручную",
+      "properties": {
+        "Node name for S&R": "GarageKitQuality"
+      },
+      "widgets_values": [
+        "auto",
+        28,
+        22,
+        18,
+        24,
+        1536,
+        1536,
+        4500000,
+        4096,
+        4096,
+        4096,
+        2048,
+        512,
+        2048,
+        18000
+      ]
     }
   ],
   "links": [
@@ -7411,19 +7714,11 @@
     ],
     [
       1176,
-      260,
+      468,
       0,
       285,
       0,
       "MESH"
-    ],
-    [
-      1186,
-      288,
-      0,
-      147,
-      3,
-      "INT"
     ],
     [
       1199,
@@ -7499,7 +7794,7 @@
     ],
     [
       1296,
-      282,
+      285,
       0,
       323,
       0,
@@ -7738,14 +8033,6 @@
       "IMAGE"
     ],
     [
-      1185,
-      288,
-      0,
-      196,
-      2,
-      "INT"
-    ],
-    [
       1450,
       241,
       0,
@@ -7869,7 +8156,7 @@
       1482,
       260,
       0,
-      430,
+      468,
       0,
       "MESH"
     ],
@@ -8416,6 +8703,190 @@
       410,
       0,
       "MESH"
+    ],
+    [
+      1555,
+      468,
+      0,
+      464,
+      0,
+      "MESH"
+    ],
+    [
+      1556,
+      464,
+      1,
+      465,
+      0,
+      "IMAGE"
+    ],
+    [
+      1557,
+      464,
+      2,
+      466,
+      0,
+      "IMAGE"
+    ],
+    [
+      1558,
+      464,
+      3,
+      467,
+      0,
+      "IMAGE"
+    ],
+    [
+      1559,
+      468,
+      0,
+      430,
+      0,
+      "MESH"
+    ],
+    [
+      1185,
+      469,
+      7,
+      196,
+      2,
+      "INT"
+    ],
+    [
+      1186,
+      469,
+      7,
+      147,
+      3,
+      "INT"
+    ],
+    [
+      1560,
+      469,
+      5,
+      241,
+      1,
+      "INT"
+    ],
+    [
+      1561,
+      469,
+      6,
+      186,
+      1,
+      "INT"
+    ],
+    [
+      1562,
+      469,
+      4,
+      94,
+      4,
+      "INT"
+    ],
+    [
+      1563,
+      469,
+      8,
+      224,
+      2,
+      "INT"
+    ],
+    [
+      1564,
+      469,
+      9,
+      417,
+      3,
+      "INT"
+    ],
+    [
+      1565,
+      469,
+      10,
+      233,
+      2,
+      "INT"
+    ],
+    [
+      1566,
+      469,
+      11,
+      233,
+      3,
+      "INT"
+    ],
+    [
+      1567,
+      469,
+      12,
+      460,
+      2,
+      "INT"
+    ],
+    [
+      1568,
+      469,
+      12,
+      461,
+      2,
+      "INT"
+    ],
+    [
+      1569,
+      469,
+      12,
+      462,
+      2,
+      "INT"
+    ],
+    [
+      1570,
+      469,
+      12,
+      463,
+      2,
+      "INT"
+    ],
+    [
+      1571,
+      469,
+      0,
+      3,
+      5,
+      "INT"
+    ],
+    [
+      1572,
+      469,
+      1,
+      18,
+      5,
+      "INT"
+    ],
+    [
+      1573,
+      469,
+      2,
+      23,
+      5,
+      "INT"
+    ],
+    [
+      1574,
+      469,
+      3,
+      12,
+      5,
+      "INT"
+    ],
+    [
+      1575,
+      469,
+      13,
+      464,
+      1,
+      "INT"
     ]
   ],
   "groups": [
