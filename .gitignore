@@ -1,0 +1,24 @@
+# Временные файлы и бэкапы
+*.bak_*
+*.bak
+*.tmp
+*.temp
+
+# Журналы и кэш Python
+logs/
+*.log
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Изолированные окружения и системные папки
+.launcher/
+standalone-env/
+.venv/
+env/
+venv/
+.comfyui-desktop-2
+
+# Ядро ComfyUI (отдельный submodule / репозиторий)
+ComfyUI/
