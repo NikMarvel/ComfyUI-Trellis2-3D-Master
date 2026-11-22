@@ -1,6 +1,7 @@
 # Контекст проекта: 3D Garage Kit Master Pipeline (ComfyLLM 3D)
 
 ## 1. Текущий статус проекта
+- **Репозиторий GitHub**: `https://github.com/NikMarvel/ComfyUI-Trellis2-3D-Master.git`
 - **Пайплайн воркфлоу**: `Antigravity_Edit_8K_Ultimate.json` и `ComfyUI/user/default/workflows/Antigravity Edit.json`.
 - **Всего нод**: 107 нод, 176 связей.
 - **Статус аудита**: 0 критических ошибок, граф 100% валиден и верифицирован `verify_nodes.py`.
